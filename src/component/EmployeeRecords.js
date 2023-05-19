@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Table } from 'react-bootstrap';
 import { useDispatch, useSelector } from "react-redux";
 import { listEmployees } from './EmployeeAction';
 
 const EmployeeRecords = () => {
     const dispatch = useDispatch();
+    const [employees, setEmployees] = useState([])
 
     const employeeList = useSelector((state) => state.employeeList);
     // debugger;
@@ -12,6 +13,7 @@ const EmployeeRecords = () => {
   
     useEffect(() => {
       dispatch(listEmployees());
+      setEmployees({...values})
     }, [dispatch]);
     console.log(values);
 
@@ -28,7 +30,7 @@ const EmployeeRecords = () => {
             </tr>
           </thead>
           <tbody>
-            {values.map((employee, index) => {
+            {employees.map((employee, index) => {
               return (
                 <>
                   {console.log(employee)}
