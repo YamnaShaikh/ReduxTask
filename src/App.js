@@ -9,7 +9,7 @@ import EmployeeRecords from './component/EmployeeRecords';
 function App() {
   return (
     <div className='App'>
-     {/* <BrowserRouter>
+     <BrowserRouter>
       <Header />
       <Routes>
       
@@ -19,10 +19,9 @@ function App() {
             
  
       </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
 
-    <Header />
-    <AddEmployee />
+    
     </div>
   );
 }
