@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.navform{
+  float: right;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.employeeform{
+  width: 700px;
+  min-width: 500px;
+  text-align: left;
+  padding: 20px;
+}
+
+.inputField{
+  padding: 5px;
+  margin: 5px;
+}
